@@ -8,5 +8,12 @@ function generate(event) {
 	
 	var mapper = document.getElementById('Mapper').value;
 	var name = document.getElementById('SongName').value;
-    document.getElementById('bb').value = diff + " " + name + " by " + mapper + " " + ranked;
+	var map = document.getElementById('link').value;
+	if (ranked){
+		document.getElementById('bb').value = "[img]https://enkrypton.github.io/osu_icons/"+diff+".png[/img]" + " " + "[url="+map+"]"+name+"[/url]" + " by " + "[b][profile]"+mapper+"[/profile][/b]"+" "+"[img]https://enkrypton.github.io/osu_icons/Ranked.gif[/img]";
+	}
+	else{
+		document.getElementById('bb').value = "[img]https://enkrypton.github.io/osu_icons/"+diff+".png[/img]" + " " + "[url="+map+"]"+name+"[/url]" + " by " + "[b][profile]"+mapper+"[/profile][/b]";
+	}
+
 }
