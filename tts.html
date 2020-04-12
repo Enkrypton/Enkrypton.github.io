@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="TTS Emulator to use for StreamLab donos">
+<title>TTS Emulator</title>
+<!-- STYLES -->
+<link rel="stylesheet" type="text/css" href="css/main.css">
+
+<!-- FONTS -->
+<link href="https://fonts.googleapis.com/css?family=Sen:400,700&display=swap" rel="stylesheet">
+<!-- FA -->
+<script src="https://kit.fontawesome.com/a71e54cca8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div class="links home-nav">
+	<a class="dot"><img src="assets/b.png"></a>
+	<a href="/">HOME</a>
+	<a class="dot"><img src="assets/b.png"></a>
+</div>
+<div class="content" align="center">
+<div class="name">TTS Emulator</div>
+<br>
+<a href="https://www.twitch.tv/xqcow">Link to xQc's Channel, for your convenience</a>
+<br>
+<textarea class="tts-textbox" id="text" rows=15 cols=80 maxlength=255 placeholder="Enter TTS spam here">
+</textarea>
+<br>
+<div>
+    <audio id="audio" controls="">
+        <source id="source" type="audio/wav">
+    </audio>
+</div>
+<br>
+<div class="links">
+    <button class="tts-submit" type="submit" id="PepeLaugh">Pepega Credit Card</button>
+	<button class="tts-submit" type="submit" id="copyButton">Copy to Clipboard</button>
+</div>
+<br>
+255 characters max for StreamLabs TTS.<br>
+<div class="links">
+Character Count:&nbsp;<span id="charlen">0</span>
+</div>
+</div>
+<!--PepeLaugh-->
+<script src="js/tts.js"></script>
+</body>
+</html>
