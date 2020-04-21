@@ -45,7 +45,7 @@ function generate(){
 		//fetch artist - title
 		var artist = data[0].artist;
 		var title = data[0].title;
-		bbcode = bbcode.concat(" [url=",url,"]",artist, " - ",title);
+		bbcode = bbcode.concat(" [url=",url,"]"," ",artist, " - ",title);
 		//fetch diff name
 		var diff = data[0].version;
 		bbcode = bbcode.concat(" [",diff, "] ","[/url] ");
