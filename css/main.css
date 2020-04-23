@@ -22,9 +22,24 @@ a{
 	font-size: 5em;
 }
 
+.page-title{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: row;
+	font-size: 5em;
+}
 @media only screen and (max-width: 600px) {
+	body{
+		overflow-y: scroll;
+	}
+	
 	.name {
 		font-size: 15vw;
+	}
+	
+	.page-title{
+		font-size: 10vw;
 	}
 	
 	.links {
@@ -37,6 +52,7 @@ a{
 		font-size: 5vw;
 	}
 }
+
 .socials{
 	font-size: 2em;
 }
@@ -63,6 +79,7 @@ a{
 }
 
 .home-nav{
+	position: relative;
 	color: white;
 	font-size: 2em;
 }

@@ -11,6 +11,12 @@
     cursor: default;
 }
 
+@media only screen and (max-width: 600px) {
+	.why-api{
+		display: none;
+	}
+}
+
 .why-api:before{
     content:'?';
     font-weight: bold;
