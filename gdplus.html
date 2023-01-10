@@ -6,7 +6,6 @@
 <title>GD Displayer+</title>
 <!-- STYLES -->
 <link rel="stylesheet" type="text/css" href="css/main.css">
-<link rel="stylesheet" type="text/css" href="css/gdplus.css">
 <!-- FONTS -->
 <link href="https://fonts.googleapis.com/css?family=Sen:400,700&display=swap" rel="stylesheet">
 <!-- FA -->
@@ -14,42 +13,26 @@
 <!-- jQuery -->
 <script src="https://code.jquery.com/jquery-3.5.0.min.js"></script>
 </head>
-<body>
+<body style="background-color: #5A5A5A">
 <div class="links home-nav">
-	<a class="dot"><img src="assets/b.png"></a>
 	<a href="/">HOME</a>
-	<a class="dot"><img src="assets/b.png"></a>
 </div>
 <div class="content" align="center">
-<div class="page-title">GD Displayer+ <a href="gd-features.html">&nbsp;<u>Beta</u></a></div>
+<div class="page-title">GD Displayer+ (Deprecated)</div>
 <br>
 <label style="font-size: 2em" for="beatmap">Link to your guest difficulty: </label>
 <br>
 <a>Make sure you selected your difficulty!</a>
 <br>
 <input class="tts-textbox" id="beatmap" placeholder="https://osu.ppy.sh/beatmapsets/727099#osu/1569227">
+
 <div class="links">
-	<label style="font-size: 2em" for="api">osu! API Key: </label> 
-	<div class="why-api">
-		<p><b>YOUR API KEY WILL NOT BE STORED AND ONLY BE USED TO RETRIEVE BEATMAP DATA.
-		<br><br>
-		THE SCRIPT RUNS CLIENT SIDE ONLY.
-		<br><br>
-		SEE SOURCE CODE BELOW.</b></p>
-	</div>
-</div>
-<a href="https://old.ppy.sh/p/api" target="_blank"><u>Get your osu! API key here</u> (If you had to login it will go to forums, close and click again)</a>
-<br>
-<input class="tts-textbox" id="api" placeholder="API Key">
-<br>
-<a href="https://github.com/ppy/osu-api/wiki#Beatmap" target="_blank"> <u>Why is API Key required?</u> (See: Parameters)</a>
-<div class="links">
-<button class="tts-submit" onclick="generate()">Generate!</button>
+<button class="tts-submit" onclick="generate()" id="generateButton">Generate!</button>
 <button class="tts-submit" type="submit" id="copyButton">Copy to Clipboard</button>
 </div>
 <textarea id="bbcode" placeholder="Generated BB Code will be here" class="tts-textbox"></textarea>
 <br>
-<a href="https://github.com/Enkrypton/GD-DisplayerPlus"> <u>View Source Code</u></a>
+Uses old difficulty icons. <br> Deprecated because osu! automatically lists your GDs now. <br> You can still use it if you want a list of GDs on your userpage</a>
 </div>
 <script src="js/gdplus.js"></script>
 </body>
