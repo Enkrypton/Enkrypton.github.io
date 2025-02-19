@@ -1,111 +1,170 @@
 body {
-  font-family: 'Sen', sans-serif;
+  font-family: "Sen", sans-serif;
   margin: 0;
   max-height: 100vh;
   min-height: 100vh;
 }
-a{
-	text-decoration: none;
-	color: white;
+a {
+  text-decoration: none;
+  color: white;
 }
-.content{
-	color: white;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	position: fixed;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
+.twitter {
+  text-decoration: none;
+  transition: 0.5s;
 }
-.name{
-	font-size: 5em;
+.youtube {
+  text-decoration: none;
+  transition: 0.5s;
+}
+.github {
+  text-decoration: none;
+  transition: 0.5s;
+}
+.twitter:hover {
+  text-decoration: none;
+  color: #26a7de;
+  transition: 0.5s;
+}
+.youtube:hover {
+  text-decoration: none;
+  color: #ff0931;
+  transition: 0.5s;
+}
+.github:hover {
+  text-decoration: none;
+  color: #8e8e8e;
+  transition: 0.5s;
+}
+.osb {
+  text-decoration: none;
+  transition: 0.5s;
+}
+.osb:hover {
+  text-decoration: none;
+  color: #ef6ea7;
+  transition: 0.5s;
+}
+.latex4000Webring {
+	font-size: 1.2em;
 }
 
-.page-title{
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	flex-direction: row;
-	font-size: 5em;
+.l4k {
+  text-decoration: none;
+  transition: 0.5s;
+}
+.l4k:hover {
+  text-decoration: none;
+  color: #5865f2;
+  transition: 0.5s;
+}
+.content {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.name {
+  font-size: 5em;
+  cursor: default;
+}
+.subname {
+  font-size: 1.5em;
+  cursor: default;
+}
+
+.page-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  font-size: 5em;
 }
 @media only screen and (max-width: 600px) {
-	body{
-		overflow-y: scroll;
-	}
-	
-	.name {
-		font-size: 15vw;
-	}
-	
-	.page-title{
-		font-size: 10vw;
-	}
-	
-	.links {
-		text-align: center;
-		font-size: 5vw;
-	}
-	
-	.links-long{
-		flex-direction: column;
-		font-size: 5vw;
-	}
+  body {
+    overflow-y: scroll;
+  }
+
+  .name {
+    font-size: 15vw;
+  }
+
+  .subname {
+    font-size: 4vw;
+  }
+
+  .page-title {
+    font-size: 10vw;
+  }
+
+  .links {
+    text-align: center;
+    font-size: 5vw;
+  }
+
+  .links-long {
+    flex-direction: column;
+    font-size: 5vw;
+  }
 }
 
-.socials{
-	font-size: 2em;
+.socials {
+  padding: 15px;
+  font-size: 2em;
 }
 
-.links{
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	flex-direction: row;
-	padding: 15px;
+.links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  padding: 15px;
 }
 
-.links-long{
-	text-align: center;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	padding: 15px;
+.links-long {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
 }
 
-.dot{
-	margin: 10px;
-	display: flex;
+.dot {
+  margin: 10px;
+  display: flex;
 }
 
-.home-nav{
-	position: relative;
-	color: white;
-	font-size: 2em;
+.home-nav {
+  position: relative;
+  color: white;
+  font-size: 2em;
 }
 
 /*TTS Page CSS*/
-.tts-submit{
-	font-family: 'Sen', sans-serif;
-	font-size: 20px;
-    padding: 6px 12px;
-    margin-bottom: 0;
-	margin-left: 10px;
-	margin-right: 10px;
+.tts-submit {
+  font-family: "Sen", sans-serif;
+  font-size: 20px;
+  padding: 6px 12px;
+  margin-bottom: 0;
+  margin-left: 10px;
+  margin-right: 10px;
 
-    display: inline-block;
-    text-decoration: none;
-    text-align: center;
-    vertical-align: middle;
-    cursor: pointer;
-    border: 1px solid transparent;
-	border-radius: 0.25em;
+  display: inline-block;
+  text-decoration: none;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  border: 1px solid transparent;
+  border-radius: 0.25em;
 }
 
-.tts-textbox{
-	font-family: 'Sen', sans-serif;
-	font-size: 20px;
-	padding: 10px;
-	border-radius: 0.25em;
+.tts-textbox {
+  font-family: "Sen", sans-serif;
+  font-size: 20px;
+  padding: 10px;
+  border-radius: 0.25em;
 }
 /* End of TTS Page CSS*/
